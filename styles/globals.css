@@ -1,0 +1,23 @@
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-paytone {
+    font-family: 'Paytone One', sans-serif;
+  }
+}
+
+
+@layer components {
+}
