@@ -1,12 +1,11 @@
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 
 body {
   box-sizing: border-box;
   margin: 0;
 }
-
 
 @layer utilities {
   .text-balance {
@@ -14,13 +13,59 @@ body {
   }
 
   .font-paytone {
-    font-family: 'Paytone One', sans-serif;
+    font-family: "Paytone One", sans-serif;
   }
 
   .img-main {
+    position: absolute;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(to left, #a8cbe4 20%, transparent 65%);
   }
-}
 
+  .linear-bg {
+    background-image: linear-gradient(to top, #dbd9d9 50%, transparent 90%);
+  }
+
+  .hidd {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(+100%);
+  }
+
+  .show {
+    opacity: 1;
+    transition: all 2s;
+    filter: blur(0px);
+    transform: translateX(0%);
+  }
+
+  .hidd-header {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(-100%);
+  }
+
+  .show-header {
+    opacity: 1;
+    transition: all 1.5s;
+    filter: blur(0px);
+    transform: translateY(0%);
+  }
+  .img-arrow {
+    background-image: url("../public/arrow.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%); /* Centers the arrow horizontally */
+    height: 500px; /* Adjust according to your design */
+    width: 500px; /* Allows the width to adjust based on the height */
+    bottom: -10%; /* Adjusted position from bottom */
+  }
+  
+}
 
 @layer components {
 }
