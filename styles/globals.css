@@ -28,6 +28,10 @@ body {
     background-image: linear-gradient(to top, #dbd9d9 50%, transparent 90%);
   }
 
+  .linear-bg2 {
+    background-image: linear-gradient(to bottom, #dbd9d9 100%, transparent 90%);
+  }
+
   .hidd {
     opacity: 0;
     filter: blur(15px);
@@ -59,7 +63,7 @@ body {
     background-repeat: no-repeat;
     position: absolute;
     left: 20%;
-    transform: translateX(-50%); /* Centers the arrow horizontally */
+    transform: translateX(-60%); /* Centers the arrow horizontally */
     height: 500px; /* Adjust according to your design */
     width: 500px; /* Allows the width to adjust based on the height */
     bottom: -10%; /* Adjusted position from bottom */

@@ -7,7 +7,7 @@ function MainContent() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      setIsVisible(true);
+      setIsVisible(true );
     });
     observer.observe(document.querySelector(".img-main") as Element);
   }, []);
@@ -35,7 +35,7 @@ function MainContent() {
             Saiba mais
           </button>
           <p className="tracking-widest text-xs">
-            de<span className="text-red-950"> 99,90 R$ </span>por 00,00 R${" "}
+            de<span className="text-red-950 line-through"> 99,90 R$ </span>por 00,00 R${" "}
           </p>
         </div>
         <div></div>
