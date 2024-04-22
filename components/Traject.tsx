@@ -1,13 +1,14 @@
 import React from 'react'
 import arrowRigth from '@/public/arrowRigth.png'
 import arrowLeft2 from '@/public/arrowLeft2.png'
+import world from '@/public/world.png'
 
 function Traject() {
   return (
-    <section>
+    <section className='linear-bg2 lg:pb-48'>
         <div className='mt-28 text-center'>
             <h1 className='text-5xl font-paytone text-[#1C1C1C] tracking-wider m-0'>O que você irá aprender?</h1>
-            <p className='text-xs'>
+            <p className='text-xs m-4'>
                 Seguindo esse passo a passo, você irá aprender a escolher o melhor caminho para alcançar o que você tanto deseja!
             </p>
         </div>
