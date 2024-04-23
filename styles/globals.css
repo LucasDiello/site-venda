@@ -119,6 +119,10 @@ body {
     cursor: pointer;
     padding: 0.1em 0.3em;
   }
+
+  .border-accordion {
+    border-bottom: 4px solid #346cee;
+  }
 }
 
 @layer components {

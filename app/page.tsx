@@ -1,3 +1,4 @@
+import Accordion from "@/components/Accordion";
 import Aprender from "@/components/Aprender";
 import Feedback from "@/components/Feedback";
 import Header from "@/components/Header";
@@ -14,6 +15,7 @@ export default function Home() {
     <Feedback />
     <Traject />
     <Options />
+    <Accordion />
   </main>
   );
 }

@@ -96,7 +96,7 @@ function Options() {
           VEJA NOSSA PROMOÇÃO
         </h1>
       </div>
-      <div className="mt-28  bg-[#FFF] w-full ">
+      <div className="mt-28  bg-[#FFF] w-full pb-20 ">
         <div className="container mx-auto flex">
           <div className="pt-24 flex justify-center items-center w-full space-x-24 flex-wrap">
             <div>
