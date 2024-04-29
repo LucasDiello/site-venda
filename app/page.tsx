@@ -1,6 +1,6 @@
 import Accordion from "@/components/Accordion";
 import Aprender from "@/components/Aprender";
-import Feedback from "@/components/Feedback";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MainContent from "@/components/MainContent";
 import Options from "@/components/Options";
@@ -12,10 +12,10 @@ export default function Home() {
     <Header />
     <MainContent />
     <Aprender />
-    <Feedback />
     <Traject />
     <Options />
     <Accordion />
+    <Footer />
   </main>
   );
 }

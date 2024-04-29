@@ -18,12 +18,27 @@ body {
 
   .img-main {
     position: absolute;
+    z-index: 1;
     left: 0;
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(to left, #a8cbe4 20%, transparent 65%);
+    background-image: linear-gradient(to left, #a8d2e4 20%, transparent 65%);
   }
 
+  @media (max-width: 880px) {
+    .img-main {
+    background-image: linear-gradient(to left, #a8d2e4 10%, transparent 65%);
+    height: 65%;
+    }
+  }
+
+  @media (max-width: 563px) {
+    .img-main {
+    background-image: linear-gradient(to left, #a8d2e4 -200%, transparent 95%);
+    height: 65%;
+  }
+  }
+  
   .linear-bg {
     background-image: linear-gradient(to top, #dbd9d9 50%, transparent 90%);
   }
@@ -38,6 +53,10 @@ body {
 
   .linear-bg4 {
     background-image: linear-gradient(to bottom, #dbd9d9 10%, transparent 60%);
+  }
+  
+  .linear-bg5 {
+    background-image: linear-gradient(to top, #c7c6c6 10%, transparent 90%), linear-gradient(to left, #c7c6c6 10%, transparent 90%);
   }
 
   .hidd {
@@ -74,7 +93,7 @@ body {
     transform: translateX(-60%); /* Centers the arrow horizontally */
     height: 500px; /* Adjust according to your design */
     width: 500px; /* Allows the width to adjust based on the height */
-    bottom: -10%; /* Adjusted position from bottom */
+    bottom: -11%; /* Adjusted position from bottom */
   }
 
   .box-opt {
@@ -84,11 +103,9 @@ body {
 
   .button-92 {
     --c: #fff;
-    /* text color */
     background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
         var(--_p, 100%) / 300% no-repeat,
       #346cee;
-    /* background color */
     color: #0000;
     border: none;
     transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
@@ -122,6 +139,35 @@ body {
 
   .border-accordion {
     border-bottom: 4px solid #346cee;
+  }
+
+  .back-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a8d2e4;
+    color: hsla(40, 12%, 5%, 1);
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+    transition: 250ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+  }
+  
+  .back-top-btn:is(:hover, :focus-visible) {
+    background-color: var(--gold-crayola-1);
+    box-shadow: var(--shadow-2);
+  }
+  
+  .back-top-btn.active {
+    opacity: 1;
+    visibility: visible;
   }
 }
 

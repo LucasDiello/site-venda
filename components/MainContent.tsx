@@ -13,36 +13,37 @@ function MainContent() {
   }, []);
 
   return (
-    <main className="flex">
+    <main className="flex p-2">
       <section
-        className={`container mx-auto flex relative lg:p-20 ${
+        className={`container p-2 mx-auto flex relative lg:p-10 ${
           isVisible ? "show" : "hidd"
         }`}
       >
         <div className="flex flex-col">
-          <h1 className="font-paytone tracking-wide text-5xl m-0 mb-5 text-[#1C1C1C]">
-            OBTENHA <br /> EQUILÍBRIO FINANCEIRO,
+          <h1 className="font-paytone tracking-wide text-[1.4rem] leading-[2rem] md:text-3xl lg:text-5xl m-0 mb-5 text-[#1C1C1C] ">
+            OBTENHA <br /> EVOLUÇÃO FINANCEIRA,
             <br />
-            AMADURECIMENTO PESSOAL <br />E FORTALEÇA SUAS VIRTUDES
+            SEM O CLICHÊ DE "GURUS"<br />NO MERCADO DE AFILIADOS
           </h1>
-          <p>
+          <p className="lg:text-base  text-sm ">
             A correria diária rouba seu tempo e paz, aumentando uma culpa
             silenciosa. <br /> Pare e pergunte: o que perco ao estar sempre
-            ocupado? <br /> Reconheça o peso, sinta a falta e saiba que é
-            possível resgatar seu equilíbrio.
+            ocupado? <br />Não deixe que o tempo seja apenas um ladrão de oportunidades! <br /> Nosso eBook revela estratégias eficazes para impulsionar sua renda. 
           </p>
-          <button className="w-56 h-10 mt-10 bg-green-400 border-none shadow-2xl font-medium">
-            Saiba mais
+          <button className="w-56 h-10 mt-10 bg-green-400 border-none shadow-2xl font-paytone ">
+            ADQUIRA JÁ
           </button>
           <p className="tracking-widest text-xs">
-            de<span className="text-red-950 line-through"> 99,90 R$ </span>por 00,00 R${" "}
+            de<span className="text-red-950 line-through">49,90 R$ </span>por 29,90 R${" "}
           </p>
         </div>
         <div></div>
       </section>
       <div className={`img-main ${
           isVisible ? "show" : "hidd"
-        }`}></div>
+        }`}>
+          
+        </div>
     </main>
   );
 }
