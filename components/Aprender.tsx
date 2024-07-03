@@ -34,9 +34,9 @@ function Aprender() {
 
     return (
         <section id='para-voce' className='mt-28 lg:mt-0 relative z-50 lg:static'>
-            <div className='flex'>
-                <div className='container mx-auto flex justify-center items-center flex-col'>
-                    <div className='img-arrow hidden lg:flex' />
+            <div className='flex '>
+                    <div className='img-arrow hidden w-[50%] lg:flex' />
+                <div className=' flex justify-center  lg:-[50%] items-center flex-col'>
                     <h1 className='text-2xl md:text-3xl lg:text-5xl font-paytone text-[#1C1C1C] tracking-wider'>DOMINE SUA MENTE!</h1>
                     <div className='text-center lg:text-lg text-sm p-4 lg:p-0 '>
                         <p>Descubra os segredos para alcançar o equilíbrio financeiro e pessoal em nosso eBook <span className='font-bold'>exclusivo.</span></p>

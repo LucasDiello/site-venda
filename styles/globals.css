@@ -88,9 +88,7 @@ body {
   .img-arrow {
     background-image: url("../public/arrow.png");
     background-repeat: no-repeat;
-    position: absolute;
     left: 20%;
-    transform: translateX(-60%); /* Centers the arrow horizontally */
     height: 500px; /* Adjust according to your design */
     width: 500px; /* Allows the width to adjust based on the height */
     bottom: -11%; /* Adjusted position from bottom */
