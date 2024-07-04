@@ -41,9 +41,8 @@ function MainContent() {
       </section>
       <div className={`img-main ${
           isVisible ? "show" : "hidd"
-        }`}>
+        }`} />
           
-        </div>
     </main>
   );
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ImHappy2 } from 'react-icons/im';
 
@@ -10,7 +10,7 @@ function Aprender() {
     const [email, setEmail] = useState('');
     const [received, setReceived] = useState(false);
     const [subscribeToNews, setSubscribeToNews] = useState(false);
-
+    const [isVisible, setIsVisible] = useState(false);
     const sendEmail = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         if (!email) {
@@ -32,9 +32,16 @@ function Aprender() {
             });
     };
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          setIsVisible(true );
+        });
+        observer.observe(document.querySelector(".img-arrow") as Element)
+    }, []);
+
     return (
-        <section id='para-voce' className='mt-28 lg:mt-0 relative z-50 lg:static'>
-            <div className='flex '>
+        <section id='para-voce' className={`mt-28 lg:mt-0 relative z-50 lg:static ${isVisible ? "show" : "hidd"}`}>
+            <div className='flex'>
                     <div className='img-arrow hidden w-[50%] lg:flex' />
                 <div className=' flex justify-center  lg:-[50%] items-center flex-col'>
                     <h1 className='text-2xl md:text-3xl lg:text-5xl font-paytone text-[#1C1C1C] tracking-wider'>DOMINE SUA MENTE!</h1>
