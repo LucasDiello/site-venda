@@ -7,7 +7,6 @@ body {
   margin: 0;
 }
 
-@layer utilities {
   .text-balance {
     text-wrap: balance;
   }
@@ -63,14 +62,14 @@ body {
     opacity: 0;
     filter: blur(15px);
     transition: all 1s;
-    transform: translateX(+100%);
+    transform: translateY(100%);
   }
 
   .show {
     opacity: 1;
     transition: all 2s;
     filter: blur(0px);
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 
   .hidd-header {
@@ -89,9 +88,9 @@ body {
     background-image: url("../public/arrow.png");
     background-repeat: no-repeat;
     left: 20%;
-    height: 500px; /* Adjust according to your design */
-    width: 500px; /* Allows the width to adjust based on the height */
-    bottom: -11%; /* Adjusted position from bottom */
+    height: 500px;
+    width: 500px; 
+    bottom: -11%; 
   }
 
   .box-opt {
@@ -153,21 +152,12 @@ body {
     place-items: center;
     box-shadow: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
     transition: 250ms ease;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 4;
+    z-index: 100;
   }
   
   .back-top-btn:is(:hover, :focus-visible) {
-    background-color: var(--gold-crayola-1);
-    box-shadow: var(--shadow-2);
+    background-color: #346cee;
+    box-shadow: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.5);
+    cursor: pointer;
   }
   
-  .back-top-btn.active {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-@layer components {
-}

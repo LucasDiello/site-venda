@@ -12,7 +12,6 @@ function Header() {
     });
     observer.observe(document.querySelector("header") as Element);
 
-    // Clean up the observer
     return () => {
       observer.disconnect();
     };
@@ -34,7 +33,7 @@ function Header() {
       </div>
 
     </header>
-    <a className="back-top-btn active" aria-label="back to top" onClick={() => scrollToSection("top")}>
+    <a className="back-top-btn" aria-label="back to top" onClick={() => scrollToSection("top")}>
         <AiOutlineUp />
       </a>
       </>
