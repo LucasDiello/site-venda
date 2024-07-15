@@ -5,10 +5,10 @@ Este projeto visa oferecer um ebook abrangente que ensina os fundamentos e estra
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/LucasDiello/site-venda)
 <div class="display:grid">
-<img src="/public/lmdigital.png" alt="drawing" width="420" />
-<img src="/public/lmdigital2.png" alt="drawing" width="420" />
-<img src="/public/lmdigital3.png" alt="drawing" width="420" />
-<img src="/public/lmdigital4.png" alt="drawing" width="420" />
+<img src="/public/lmdigital.png" alt="drawing" width="400" />
+<img src="/public/lmdigital2.png" alt="drawing" width="400" />
+<img src="/public/lmdigital3.png" alt="drawing" width="400" />
+<img src="/public/lmdigital4.png" alt="drawing" width="400" />
 </div>
 
 ## Tecnologias e Bibliotecas
